@@ -3,12 +3,10 @@
     package="com.example.bssid_logger"
     android:grantUriPermissions="true">
 
-    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -17,14 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/provider_paths" />
 
-        <service
-            android:name=".Logger"
-            android:exported="false"/>
-
+        <!--<service-->
+            <!--android:name=".Logger"-->
+            <!--android:exported="false" />-->
 
         <activity
             android:name=".MainActivity"
@@ -43,16 +37,17 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
 
-        <receiver android:name=".Alarm"> <!--android:exported="true"-->
-           <!-- <intent-filter>
+        <receiver android:name=".Alarm"> <!-- android:exported="true" -->
+            <!--
+            <intent-filter>
                 <action android:name="bssid_logger.START_ALARM" >
                 </action>
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </receiver>
-
     </application>
 
 </manifest>

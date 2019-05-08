@@ -8,6 +8,8 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -101,12 +103,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-//        System.out.println("stopping logger");
-//        alarm.cancelAlarm(this);
-//        Toast.makeText(this, "stopped logging", Toast.LENGTH_LONG).show();
-//        logging = false;
         super.onDestroy();
     }
+
 
     public void clickSendLog(View v)
     {

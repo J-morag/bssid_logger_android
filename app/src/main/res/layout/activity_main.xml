@@ -22,9 +22,9 @@
         android:id="@+id/sendLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="144dp"
         android:onClick="clickSendLog"
         android:text="Send Log"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,17 +36,17 @@
         android:layout_height="0dp"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="24dp"
         android:text="my_ID: "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lbl_versionNumber" />
 
     <Button
         android:id="@+id/getCurrentBssid"
         android:layout_width="96dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginBottom="132dp"
         android:onClick="updateCurrentBssidDisplay"
         android:text="refresh +log bssid"
@@ -55,9 +55,11 @@
 
     <Button
         android:id="@+id/stopstart"
-        android:layout_width="85dp"
+        android:layout_width="87dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="132dp"
         android:onClick="clickStartStop"
         android:text="Stop/Start"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,13 +67,13 @@
 
     <TextView
         android:id="@+id/phone_ID"
-        android:layout_width="297dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="106dp"
-        android:layout_marginLeft="106dp"
+        android:layout_width="246dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="88dp"
         android:text="ID"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/my_ID"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -80,35 +82,33 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="24dp"
         android:text="Current BSSID: "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/my_ID" />
 
     <TextView
         android:id="@+id/BSSID"
         android:layout_width="266dp"
         android:layout_height="27dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
         android:text="BSSID"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/current_BSSID" />
 
     <Button
         android:id="@+id/update_num_records"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
         android:onClick="updateNumRecords"
         android:text="update num records"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/numRecords" />
 
     <TextView
         android:id="@+id/LblnumRecords"
@@ -116,10 +116,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="24dp"
         android:text="num records"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/BSSID" />
 
     <TextView
         android:id="@+id/numRecords"
@@ -127,10 +127,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="309dp"
+        android:layout_marginTop="8dp"
         android:text="records"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/LblnumRecords" />
 
     <TextView
         android:id="@+id/lbl_versionNumber"
@@ -139,7 +139,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="36dp"
-        android:text="version 1.1"
+        android:text="version 1.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
